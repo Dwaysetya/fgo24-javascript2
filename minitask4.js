@@ -1,23 +1,17 @@
 const ganjilGenap = (gangen, cb) => {
+  if (typeof gangen !== "number") {
+    console.log("suhu harus sebuah number");
+    return;
+  }
   return cb(gangen);
 };
 
 const genap = (a1) => {
-  return 2 % 2 == 0;
-};
-
-const ganjil = (a2) => {
-  return 2 % 2 == 1;
-};
-
-const result = ganjilGenap(6, function (y1) {
-  if (y1 % 2 == 0) {
-    console.log(genap);
-    return;
+  if (a1 % 2 == 0) {
+    console.log("genap");
   } else {
-    console.log(ganjil);
-    return;
+    console.log("ganjil");
   }
-});
+};
 
-console.log(result);
+ganjilGenap(23, genap);
