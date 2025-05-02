@@ -12,10 +12,10 @@ const reamur = (c1) => {
   return (4 / 5) * c1;
 };
 
-const result = celcius(5, reamur);
-const result1 = celcius(5, fahrenheit);
-const result2 = celcius(5, kelvin);
+const resultReamur = celcius(5, reamur);
+const resultFahrenheit = celcius(5, fahrenheit);
+const resultKelvin = celcius(5, kelvin);
 
-console.log(result);
-console.log(result1);
-console.log(result2);
+console.log("Reamur:", resultReamur);
+console.log("Fahrenheit:", resultFahrenheit);
+console.log("Kelvin:", resultKelvin);

@@ -1,17 +1,17 @@
-const ganjilGenap = (gangen, cb) => {
-  if (typeof gangen !== "number") {
-    console.log("suhu harus sebuah number");
+const ganjilGenap = (number, callback) => {
+  if (typeof number !== "number") {
+    console.log("Input harus berupa angka (number)");
     return;
   }
-  return cb(gangen);
+  callback(number);
 };
 
-const genap = (a1) => {
-  if (a1 % 2 == 0) {
-    console.log("genap");
+const cekGanjilGenap = (angka) => {
+  if (angka % 2 === 0) {
+    console.log("Genap");
   } else {
-    console.log("ganjil");
+    console.log("Ganjil");
   }
 };
 
-ganjilGenap(23, genap);
+ganjilGenap(22, cekGanjilGenap);

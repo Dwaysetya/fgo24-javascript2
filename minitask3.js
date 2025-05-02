@@ -31,7 +31,7 @@ const celcius = {
 
 const fahrenheit = celcius.confert(10, "f");
 const kelfin = celcius.confert(10, "k");
-const reamur = celcius.confert(10, "r");
+const reamur = celcius.confert(2, "r");
 
 console.log("hasil konversi :" + fahrenheit);
 console.log("hasil konversi :" + kelfin);
